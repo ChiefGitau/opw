@@ -16,6 +16,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -76,15 +78,90 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-visual">
-                        <div class="floating-card">
-                            <img src="/images/white-logo-simple.jpg" alt="Tekkers Logo" class="hero-logo mb-3">
-                            <h4>Football</h4>
-                            <p>Small-sided games in Amsterdam</p>
-                        </div>
-                        <div class="floating-card">
-                            <img src="/images/basketball-logo.jpg" alt="Tekkers Logo" class="hero-logo mb-3">
-                            <h4>Basketball</h4>
-                            <p>Pick-up runs and organized matches</p>
+                        <div class="swiper sports-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="floating-card live-sport">
+                                        <img src="/images/white-logo-simple.jpg" alt="Football" class="hero-logo mb-3">
+                                        <h4>Football</h4>
+                                        <p>Small-sided games in Amsterdam</p>
+                                        <span class="sport-status live">Live</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="floating-card live-sport">
+                                        <img src="/images/basketball-logo.jpg" alt="Basketball" class="hero-logo mb-3">
+                                        <h4>Basketball</h4>
+                                        <p>Pick-up runs and organized matches</p>
+                                        <span class="sport-status live">Live</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="floating-card">
+                                        <i class="fas fa-table-tennis hero-icon mb-3"></i>
+                                        <h4>Paddle</h4>
+                                        <p>Court sports and tournaments</p>
+                                        <span class="sport-status coming-soon">Coming Soon</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="floating-card">
+                                        <i class="fas fa-running hero-icon mb-3"></i>
+                                        <h4>Running</h4>
+                                        <p>Group runs and marathons</p>
+                                        <span class="sport-status coming-soon">Coming Soon</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="floating-card">
+                                        <i class="fas fa-futbol hero-icon mb-3"></i>
+                                        <h4>Futsal</h4>
+                                        <p>Indoor football matches</p>
+                                        <span class="sport-status coming-soon">Coming Soon</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="floating-card">
+                                        <i class="fas fa-square hero-icon mb-3"></i>
+                                        <h4>Squash</h4>
+                                        <p>Court games and leagues</p>
+                                        <span class="sport-status coming-soon">Coming Soon</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="floating-card">
+                                        <i class="fas fa-table-tennis hero-icon mb-3"></i>
+                                        <h4>Tennis</h4>
+                                        <p>Singles and doubles matches</p>
+                                        <span class="sport-status coming-soon">Coming Soon</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="floating-card">
+                                        <i class="fas fa-mountain hero-icon mb-3"></i>
+                                        <h4>Bouldering</h4>
+                                        <p>Climbing sessions and challenges</p>
+                                        <span class="sport-status coming-soon">Coming Soon</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="floating-card">
+                                        <i class="fas fa-dumbbell hero-icon mb-3"></i>
+                                        <h4>Training Instructor</h4>
+                                        <p>Personal and group training</p>
+                                        <span class="sport-status coming-soon">Coming Soon</span>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="floating-card">
+                                        <i class="fas fa-table-tennis hero-icon mb-3"></i>
+                                        <h4>Pickleball</h4>
+                                        <p>Fast-growing paddle sport</p>
+                                        <span class="sport-status coming-soon">Coming Soon</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -97,7 +174,7 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="display-4 fw-bold mb-4">Core Features</h2>
+                    <h2 class="display-4 fw-bold mb-4">Host and Discover Sports Meetups</h2>
                     <p class="lead">Built for grassroots organizers, private sports groups, and casual players in
                         Amsterdam</p>
                 </div>
@@ -108,13 +185,14 @@
                         <div class="service-icon">
                             <i class="fas fa-plus-circle"></i>
                         </div>
-                        <h3>Create and Join Games</h3>
-                        <p>Set up 5v5, 7v7, or casual matches in seconds. Find local games or start your own with your
-                            crew.</p>
+                        <h3>Host and Discover Sports Meetups
+                        </h3>
+                        <p>Effortlessly create or join local sports events. Whether you're organizing a match or looking
+                            to play, Tekkers makes it easy to connect with your community.</p>
                         <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Quick Game Setup</li>
-                            <li><i class="fas fa-check"></i> Multiple Formats</li>
-                            <li><i class="fas fa-check"></i> Join Local Games</li>
+                            <li><i class="fas fa-check"></i> Simple Event Creation</li>
+                            <li><i class="fas fa-check"></i> Flexible Game Formats</li>
+                            <li><i class="fas fa-check"></i> Find Nearby Meetups</li>
                         </ul>
                     </div>
                 </div>
@@ -124,11 +202,11 @@
                             <i class="fas fa-check-circle"></i>
                         </div>
                         <h3>Player Check-ins</h3>
-                        <p>See who's in, who's out, and fill empty spots fast. Track attendance and manage your squad
-                            effortlessly.</p>
+                        <p>Easily track who’s attending, manage open spots, and keep your event organized. Tekkers helps
+                            you stay on top of your game logistics.</p>
                         <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Quick RSVPs</li>
-                            <li><i class="fas fa-check"></i> Spot Management</li>
+                            <li><i class="fas fa-check"></i> Instant Check-ins</li>
+                            <li><i class="fas fa-check"></i> Real-Time Spot Tracking</li>
                             <li><i class="fas fa-check"></i> Player Status</li>
                         </ul>
                     </div>
@@ -162,9 +240,9 @@
                             Where Amsterdam <span class="text-primary">Plays</span>
                         </h2>
                         <p class="lead mb-4">
-                            Currently available in Amsterdam, Tekkers is where the city's football and basketball
-                            culture comes to life. Built for grassroots organizers and casual players who want to focus
-                            on the game, not the planning.
+                            Now live in Amsterdam, Tekkers brings local sports culture to life.
+                            From grassroots organizers to everyday players, our platform makes it easy to host and join
+                            sports meetups without the hassle. So you can focus on playing, not planning.
                         </p>
                         <div class="app-features">
                             <div class="feature-item">
@@ -304,6 +382,8 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="/js/main.js"></script>
 </body>

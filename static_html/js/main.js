@@ -60,3 +60,30 @@ document.querySelectorAll('.btn').forEach(btn => {
     });
 });
 
+// Initialize Swiper for sports slider
+document.addEventListener('DOMContentLoaded', function() {
+    const sportsSwiper = new Swiper('.sports-slider', {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            }
+        }
+    });
+});
+
